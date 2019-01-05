@@ -10,13 +10,14 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
         <TextView
+            android:background="@color/colorPrimary"
             android:id="@+id/tv_bulan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="BULAN - TAHUN"
-            android:textSize="26sp"
+            android:textSize="22sp"
             android:textStyle="bold"
-            android:textColor="#000"
+            android:textColor="#ffff"
             android:gravity="center"/>
         <com.github.sundeepk.compactcalendarview.CompactCalendarView
             android:id="@+id/compactcalendar_view"
@@ -193,20 +194,24 @@
             android:layout_margin="10dp">
             <Button
                 android:id="@+id/btnCancel"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="CANCEL"
-                android:textSize="22sp"
+                android:textSize="18sp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:background="@color/colorPrimary"
                 android:textColor="#ffff"/>
             <Button
                 android:id="@+id/btnAdd"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="TAMBAH"
-                android:textSize="22sp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textSize="18sp"
                 android:background="@color/colorPrimary"
                 android:textColor="#ffff"/>
         </LinearLayout>
