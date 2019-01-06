@@ -172,16 +172,16 @@ public class MainActivity extends AppCompatActivity {
         currentCalender.set(Calendar.DAY_OF_MONTH, 1);
         Date firstDayOfMonth = currentCalender.getTime();
 //        for (int i = 0; i < 1; i++) {
-            currentCalender.setTime(firstDayOfMonth);
-            if (year > -1) {
-                currentCalender.set(Calendar.YEAR, year);
-            }
-            if (month > -1) {
-                currentCalender.set(Calendar.MONTH, month);
-            }
-            currentCalender.add(Calendar.DATE, day-1);
-            setToMidnight(currentCalender);
-            compactCalendarView.addEvent(new CalendarDayEvent(currentCalender.getTimeInMillis(), Color.argb(255, 255, 255, 255)), false);
+        currentCalender.setTime(firstDayOfMonth);
+        if (year > -1) {
+            currentCalender.set(Calendar.YEAR, year);
+        }
+        if (month > -1) {
+            currentCalender.set(Calendar.MONTH, month);
+        }
+        currentCalender.add(Calendar.DATE, day-1);
+        setToMidnight(currentCalender);
+        compactCalendarView.addEvent(new CalendarDayEvent(currentCalender.getTimeInMillis(), Color.argb(255, 255, 255, 255)), false);
 //        }
     }
 
